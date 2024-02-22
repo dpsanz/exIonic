@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+      <ion-item>
+        <ion-input
+        label="AC" [(ngModel)]="n1"
+        labelPlacement="floating"
+        type="number"
+        placeholder="Digite a AC">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+        label="AGH" [(ngModel)]="n2"
+        labelPlacement="floating"
+        type="number"
+        placeholder="Digite a AGH">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+        label="AT" [(ngModel)]="n3"
+        labelPlacement="floating"
+        type="number"
+        placeholder="Digite a AT">
+        </ion-input>
+      </ion-item>
+
+<ion-button
+  expand="block" (click)="calc()">Calcular Média
+</ion-button>
+
+<ion-label>
+  {{res}}
+</ion-label>
+
+</ion-content>
