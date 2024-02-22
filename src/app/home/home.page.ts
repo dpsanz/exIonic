@@ -9,4 +9,12 @@ export class HomePage {
 
   constructor() {}
 
+  num='';
+  res=0;
+
+  converter(){
+    this.res = parseFloat(this.num)*5;
+  }
+
 }
+
